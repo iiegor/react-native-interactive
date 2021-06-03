@@ -11,7 +11,7 @@
 ## Installation
 
 ```shell
-$ npm install rn-interactive
+npm install rn-interactive
 ```
 
 ## Usage example
