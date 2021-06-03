@@ -1,0 +1,25 @@
+{
+  "name": "rn-interactive",
+  "version": "0.1.0",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "test": "expo-module test"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.35",
+    "@types/react-native": "^0.63.2",
+    "expo": "^41.0.1",
+    "expo-module-scripts": "^2.0.0",
+    "react": "^16.14.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
+    "typescript": "~4.0.0"
+  },
+  "author": "Iegor Azuaga <iegorazuaga@gmail.com>",
+  "license": "MIT"
+}
