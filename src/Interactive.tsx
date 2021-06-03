@@ -52,11 +52,12 @@ class Interactive extends React.Component<InteractiveProps, InteractiveState> {
       });
     }
 
+    const singleChild = React.Children.only(child);
     return (
       <Pressable
         onPressIn={this._handlePressDown}
         onPressOut={this._handlePressUp}
-        children={child}
+        children={singleChild}
       />
     );
   }
