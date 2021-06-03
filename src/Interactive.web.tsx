@@ -1,6 +1,9 @@
 import React, { RefObject } from 'react';
 import { InteractiveProps, InteractiveState } from './Interactive.types';
 
+/**
+ * Applies a set of props to a children
+ */
 function applyChildProps(children: React.ReactNode, props: any) {
   const singleChild = React.Children.only(children) as React.ReactElement;
   return React.cloneElement(singleChild, props);
