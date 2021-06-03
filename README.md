@@ -27,9 +27,9 @@ function Button({ disabled = false }) {
           accessible={!disabled}
           style={[
             styles.button,
-            isHovered && styles.hover,
-            isFocused && styles.focus,
-            isPressed && styles.active,
+            isHovered && styles.hovered,
+            isFocused && styles.focused,
+            isPressed && styles.pressed,
             disabled && styles.disabled,
           ]}
         >
@@ -45,14 +45,14 @@ function Button({ disabled = false }) {
 
 ### Interactive
 
-Creates an Interactive component
+Create an Interactive component
 
 Props | Type | Description
 --- | --- | ---
 disabled | boolean | Indicates if the element is interactable. Default to `false`.
-onHoverIn | function | The element gets hovered.
-onHoverOut | function | The element loses the hover state.
-onPressIn | function | The element gets pressed.
-onPressOut | function | The element loses the press state.
-onFocusIn | function | The element gets focused in.
-onFocusOut | function | The element loses the focus state.
+onHoverIn | function | Callback when the element is `hovered`.
+onHoverOut | function | Callback when the element loses the `hovered` state.
+onPressIn | function | Callback when the element is `pressed`.
+onPressOut | function | Callback when the element loses the `pressed` state.
+onFocusIn | function | Callback when the element is `focused`.
+onFocusOut | function | Callback when the element loses the `focused` state.
