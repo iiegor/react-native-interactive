@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interactive web should render as expected 1`] = `
+<Interactive
+  disabled={true}
+>
+  <button
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseOver={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchStart={[Function]}
+  >
+    I'm a button
+  </button>
+</Interactive>
+`;

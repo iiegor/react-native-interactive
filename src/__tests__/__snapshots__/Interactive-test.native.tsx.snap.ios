@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interactive native should render as expected 1`] = `
+<Interactive
+  disabled={true}
+>
+  <ForwardRef(Pressable)
+    onPressIn={[Function]}
+    onPressOut={[Function]}
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      >
+        <button>
+          I'm a button
+        </button>
+        <PressabilityDebugView
+          color="red"
+        />
+      </View>
+    </View>
+  </ForwardRef(Pressable)>
+</Interactive>
+`;
