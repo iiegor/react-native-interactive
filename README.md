@@ -50,10 +50,11 @@ Create an Interactive component
 
 Props | Type | Description
 --- | --- | ---
-disabled | boolean | Indicates if the element is interactable. Default to `false`.
-onHoverIn | function | Callback when the element is `hovered`.
-onHoverOut | function | Callback when the element loses the `hovered` state.
-onPressIn | function | Callback when the element is `pressed`.
-onPressOut | function | Callback when the element loses the `pressed` state.
-onFocusIn | function | Callback when the element is `focused`.
-onFocusOut | function | Callback when the element loses the `focused` state.
+children | `Element` or `Function` | Element or callback providing the current state.
+disabled | `boolean` | Prevents the interaction when enabled. Default to `false`.
+onHoverIn | `function` | Callback when the element is `hovered`.
+onHoverOut | `function` | Callback when the element loses the `hovered` state.
+onPressIn | `function` | Callback when the element is `pressed`.
+onPressOut | `function` | Callback when the element loses the `pressed` state.
+onFocusIn | `function` | Callback when the element is `focused`.
+onFocusOut | `function` | Callback when the element loses the `focused` state.
