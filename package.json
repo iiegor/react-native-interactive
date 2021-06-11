@@ -1,7 +1,7 @@
 {
   "name": "rn-interactive",
   "description": "Handle interactions with your components effectively across platforms",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "sideEffects": false,
