@@ -1,10 +1,10 @@
 import React from 'react';
 
-export type InteractiveState = {
+export type InteractiveState = Partial<{
   isHovered: boolean;
   isFocused: boolean;
   isPressed: boolean;
-};
+}>;
 
 export type InteractiveProps = {
   children:

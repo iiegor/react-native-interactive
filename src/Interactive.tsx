@@ -11,8 +11,6 @@ class Interactive extends React.Component<InteractiveProps, InteractiveState> {
     super(props);
 
     this.state = {
-      isHovered: false,
-      isFocused: false,
       isPressed: false,
     };
   }
@@ -41,13 +39,13 @@ class Interactive extends React.Component<InteractiveProps, InteractiveState> {
 
   render() {
     const { children, disabled } = this.props;
-    const { isHovered, isFocused, isPressed } = this.state;
+    const { isPressed } = this.state;
 
     let child = children;
     if (typeof child === 'function') {
       child = child({
-        isHovered: !disabled && isHovered,
-        isFocused: !disabled && isFocused,
+        isHovered: false,
+        isFocused: false,
         isPressed: !disabled && isPressed,
       });
     }
