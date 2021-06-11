@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: generate tag and release body
+      - name: Configure git identity
         run: |
           git config user.name github-ci
           git config user.email iiegor@users.noreply.github.com
@@ -26,3 +26,5 @@ jobs:
         run: npm ci
       - run: npm test
       - run: npm run version
+      - name: Push changes
+        run: git push --follow-tags origin
